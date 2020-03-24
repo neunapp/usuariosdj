@@ -26,4 +26,9 @@ urlpatterns = [
         views.UpdatePasswordView.as_view(),
         name='user-update',
     ),
+    path(
+        'user-verification/<pk>/', 
+        views.CodeVerificationView.as_view(),
+        name='user-verification',
+    ),
 ]
